@@ -13,27 +13,34 @@ body {
 .header {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-column: 1 / 3;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2 / 3;
 
-    height: 200px;
+    background-color: yellow;
 }
 
-.logo {
+/* .logo {
+    grid-row: 1/3; 
     color: white;
     background-color: blue;
-}
+} */
 
-.nav {
+/* .search {
+
+} */
+
+/* .nav {
     display: grid;
     grid-column: 2 / 3;
     background-color: pink;
-}
+} */
 
 .sidebar {
-    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
     
     background-color: green;;
-    height: 100px; 
+    height: 500px; 
 }
 
 .footer {

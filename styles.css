@@ -13,34 +13,32 @@ body {
 .header {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 1fr;
     grid-column: 2 / 3;
 
     background-color: yellow;
 }
 
-/* .logo {
-    grid-row: 1/3; 
-    color: white;
-    background-color: blue;
-} */
-
-/* .search {
-
-} */
-
-/* .nav {
+.search {
     display: grid;
-    grid-column: 2 / 3;
-    background-color: pink;
-} */
+    grid-template-columns: 5fr 3fr;;
+    grid-column: 1 / 3;
+}
 
 .sidebar {
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr 4fr;
+    
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     
-    background-color: green;;
-    height: 500px; 
+    color: white;
+    background-color: blue;;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
 }
 
 .footer {

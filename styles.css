@@ -115,12 +115,12 @@ input:focus{
 .user-info {
     align-items: end;
     display: grid;
+    font-family: "distant";
     font-size: 1.2rem;
     grid-template-columns: 80px 1fr;
     grid-template-rows: 1fr 2fr;;
     margin-left: 16px;
     padding: 16px;
-    font: 1rem "distant";
 }
 
 .user-info > p {
@@ -187,7 +187,7 @@ input:focus{
     grid-template-columns: 3fr 1fr;
 }
 
-p.title {
+.projects .title {
     padding: 16px;
     font-size: 1.5rem;
     color: var(--color-lighttext);
@@ -256,16 +256,63 @@ p.title {
 
 .RHS {
     padding: 0px 32px;
+    display: grid;
+    grid-template-rows: min-content 50px min-content;
+    gap: 16px;
 }
 
-.RHS .card {
+.announce-card,
+.trend-card {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: auto-fit;
+    padding: 32px;
+    gap: 16px;
+    display: grid;
+    grid-template-rows: 1fr 2px 1fr 2px 1fr;
     width: minmax(400px, 1fr);
+    background-color: var(--color-lightgray);
 }
 
-.footer {
-    background-color: var(--color-lightgray);
-    grid-column: 1 / 3;
-    text-align: center;
+.announce-card .title {
+    font: 1rem "distant";
+    color: var(--color-lighttext);
+}
+
+.announce-card .text {
+    font-size: .9rem;
+    color: var(--color-lighttext);
+}
+
+.trend-card {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 24px 8px;
+    color: var(--color-lighttext);
+}
+
+.avatar {
+    display: inline-block; 
+    position: relative; 
+    width: 50px; 
+    height: 50px; 
+    overflow: hidden; 
+    border-radius: 50%; 
+}
+
+.avatar img {
+    width: auto; height: 100%; margin-left: -15px; 
+}
+
+.trend-card .title {
+    padding: 0;
+    font: 1rem "distant";
+}
+
+.trend-card .text {
+    font-size: 1.2rem;
+    margin-top: 4px;
 }
 
 .filter-dark {

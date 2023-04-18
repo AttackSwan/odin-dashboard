@@ -2,16 +2,20 @@
     --color-orange: #eeb241;
     --color-blue: #2391d0;
     --color-bright-text: yellow;
+    --color-darktext: #222222;
     --color-lightgray: #333333; 
     --color-darkgray: #222222;
     --color-lighttext: #c6c6c6;
     --color-text-shadow: gray;
 }
 
-[data-theme="dark"] {
+[data-theme="light"] {
 
-    --bg-color: #121212;
-    --font-color: #fefefe;
+    --color-darkgray: #969696;
+    --color-orange: #2391d0;
+    --color-blue: #eeb241;
+    --color-lighttext: #222222;
+    --color-lightgray: #c6c6c6;
 }
 
 @font-face {
@@ -39,7 +43,7 @@
 }
 
 .header {
-    background-color: #333333;
+    background-color: var(--color-lightgray);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     display: grid;
     grid-column: 2 / 3;
@@ -144,6 +148,7 @@ input:focus{
 .sidebar {
     align-items: start;
     background-color: var(--color-orange);
+    color: var(--color-darktext);
     display: grid;
     gap: 48px;
     grid-column: 1 / 2;
@@ -153,7 +158,6 @@ input:focus{
 
 .branding {
     align-items: center;
-    color: var(--color-darkgray);
     display: grid;
     font-weight: 600;
     font-size: 1.7rem;
@@ -170,7 +174,7 @@ input:focus{
 .navigation,
 .settings {
     align-items: center;
-    color: var(--color-darkgray);
+    /* color: var(--color-darkgray); */
     display: grid;
     font-size: 1.2rem;
     font-weight: 500;
@@ -185,6 +189,7 @@ input:focus{
     padding: 16px;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    overflow: scroll;
 }
 
 .projects .title {
@@ -332,7 +337,7 @@ input:focus{
 
 a {
     text-decoration: none;
-    color: var(--color-darkgray);
+    color: var(--color-darktext);
 }
 
 a:hover {
@@ -359,7 +364,7 @@ a:hover {
 }
 
 .slider {
-  background-color: #ccc;
+  background-color: var(--color-darkgray);
   bottom: 0;
   cursor: pointer;
   left: 0;

@@ -7,6 +7,13 @@
     --color-darkgray: #222222;
     --color-lighttext: #c6c6c6;
     --color-text-shadow: gray;
+    /* Filter variables */
+    --invert: 74%;
+    --sepia: 34%;
+    --saturate: 890%;
+    --hue-rotate: 349deg;
+    --brightness: 99%;
+    --contrast: 89%;
 }
 
 [data-theme="light"] {
@@ -16,6 +23,13 @@
     --color-blue: #eeb241;
     --color-lighttext: #222222;
     --color-lightgray: #c6c6c6;
+    --color-darktext: white;
+    --invert: 75%;
+    --sepia: 55%;
+    --saturate: 6661%;
+    --hue-rotate: 174deg;
+    --brightness: 87%;
+    --contrast: 84%;
 }
 
 @font-face {
@@ -196,6 +210,7 @@ input:focus{
     padding: 16px;
     font-size: 1.5rem;
     color: var(--color-lighttext);
+
 }
 
 .cards {
@@ -233,6 +248,12 @@ input:focus{
     font-weight: 600;
     font: 1.5rem "distant";
     margin-top: 8px;
+    text-shadow: 1px 1px 2px var(--color-text-shadow);
+
+}
+
+.cards ~ .title {
+    padding-left: 48px;
 }
 
 .mando .title,
@@ -323,11 +344,8 @@ input:focus{
 }
 
 .filter-orange {
-    filter: invert(74%) sepia(34%) saturate(890%) hue-rotate(349deg) brightness(99%) contrast(89%);
-}
-
-.filter-shadow {
-    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+    filter: invert(var(--invert)) sepia(var(--sepia)) saturate(var(--saturate)) hue-rotate(var(--hue-rotate)) brightness(var(--brightness)) contrast(var(--contrast));
+    /* filter: invert(74%) sepia(34%) saturate(890%) hue-rotate(349deg) brightness(99%) contrast(89%); */
 }
 
 .text-orange {

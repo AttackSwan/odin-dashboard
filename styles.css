@@ -108,7 +108,7 @@ input:focus{
     grid-template-columns: 60px 1fr;
 }
 
-.github > img {
+.github img {
     height: 50px;
 }
 
@@ -219,7 +219,6 @@ input:focus{
     border-radius: 0 20px 20px 0px;
     color: var(--color-lighttext);
     display: grid;
-    gap: 16px;
     grid-template-rows: 50px 1fr auto-fit auto-fit;
     justify-items: center;
     padding: 16px;
@@ -228,14 +227,13 @@ input:focus{
 .card .title {
     font-weight: 600;
     font: 1.5rem "distant";
-    margin-bottom: 8px;
     margin-top: 8px;
 }
 
 .mando .title,
 .mando .text {
-    font-family: "mando";
     color: var(--color-bright-text);
+    font-family: "mando";
 }
 
 .card .text {
@@ -255,50 +253,50 @@ input:focus{
 }
 
 .RHS {
-    padding: 0px 32px;
     display: grid;
-    grid-template-rows: min-content 50px min-content;
     gap: 16px;
+    grid-template-rows: min-content 50px min-content;
+    padding: 0px 32px;
 }
 
 .announce-card,
 .trend-card {
+    background-color: var(--color-lightgray);
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: grid;
+    gap: 16px;
+    grid-template-rows: 1fr 2px 1fr 2px 1fr;
     height: auto-fit;
     padding: 32px;
-    gap: 16px;
-    display: grid;
-    grid-template-rows: 1fr 2px 1fr 2px 1fr;
     width: minmax(400px, 1fr);
-    background-color: var(--color-lightgray);
 }
 
 .announce-card .title {
-    font: 1rem "distant";
     color: var(--color-lighttext);
+    font: 1rem "distant";
 }
 
 .announce-card .text {
-    font-size: .9rem;
     color: var(--color-lighttext);
+    font-size: .9rem;
 }
 
 .trend-card {
+    color: var(--color-lighttext);
     display: grid;
+    gap: 24px 8px;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: repeat(4, 1fr);
-    gap: 24px 8px;
-    color: var(--color-lighttext);
 }
 
 .avatar {
+    border-radius: 50%; 
     display: inline-block; 
-    position: relative; 
-    width: 50px; 
     height: 50px; 
     overflow: hidden; 
-    border-radius: 50%; 
+    position: relative; 
+    width: 50px; 
 }
 
 .avatar img {
@@ -306,8 +304,8 @@ input:focus{
 }
 
 .trend-card .title {
-    padding: 0;
     font: 1rem "distant";
+    padding: 0;
 }
 
 .trend-card .text {
@@ -332,9 +330,18 @@ input:focus{
     text-shadow: 1px 1px 2px black;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-darkgray);
+}
 
+a:hover {
+    text-decoration: underline;
+}
 
-
+.github a:hover {
+    color: var(--color-blue);
+}
 
 .switch {
     height: 30px;

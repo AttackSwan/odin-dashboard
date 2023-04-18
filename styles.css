@@ -1,6 +1,7 @@
 :root {
     --color-orange: #eeb241;
     --color-blue: #2391d0;
+    --color-bright-text: yellow;
     --color-lightgray: #333333; 
     --color-darkgray: #222222;
     --color-lighttext: #c6c6c6;
@@ -12,6 +13,22 @@
     --bg-color: #121212;
     --font-color: #fefefe;
 }
+
+@font-face {
+    font-family: "distant";
+    src: url("font/distgrg_-webfont.woff2") format("woff2"), url("font/distgrg_-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "mando";
+    src: url("font/mandalor-webfont.woff2") format("woff2"), url("font/mandalor-webfont.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
 
 .container {
     display:    grid;
@@ -103,6 +120,7 @@ input:focus{
     grid-template-rows: 1fr 2fr;;
     margin-left: 16px;
     padding: 16px;
+    font: 1rem "distant";
 }
 
 .user-info > p {
@@ -137,11 +155,12 @@ input:focus{
     align-items: center;
     color: var(--color-darkgray);
     display: grid;
-    font-size: 1.7rem;
     font-weight: 600;
+    font-size: 1.7rem;
     grid-template-columns: 60px 1fr;
     padding: 20px 16px 0px 16px;
     text-shadow: 1px 1px 2px var(--color-text-shadow);
+    
 }
 
 .branding > img {
@@ -189,6 +208,7 @@ p.title {
     height: 450px;
 }
 
+
 .strip {
     background-color: var(--color-blue);
     border-radius: 20px 0px 0px 20px;
@@ -201,13 +221,21 @@ p.title {
     display: grid;
     gap: 16px;
     grid-template-rows: 50px 1fr auto-fit auto-fit;
+    justify-items: center;
     padding: 16px;
 }
 
 .card .title {
-    font-size: 1.7rem;
     font-weight: 600;
+    font: 1.5rem "distant";
     margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.mando .title,
+.mando .text {
+    font-family: "mando";
+    color: var(--color-bright-text);
 }
 
 .card .text {
@@ -219,12 +247,11 @@ p.title {
 }
 
 .icons {
-    padding: 16px;
+    align-items: center;
     display: flex;
     gap: 16px;
-    align-items: center;
-    justify-content: end;
-
+    justify-self: end;
+    padding: 16px;
 }
 
 .RHS {

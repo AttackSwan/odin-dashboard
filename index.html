@@ -5,223 +5,217 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <script src="javascript.js" defer></script>
-</head>
-<body>
-    <div class="container">
-        
-        <div class="header">
-            <div class="search">
-                <div class="search-input">
-                    <img src="img/magnify.svg" alt="search icon" class="filter-orange">
-                    <input type="text" id="searchBar" placeholder="Search...">
-                </div>
-                <div class="search-icons">
-                    <div class="mode-switch">
-                        <img src="img/light.svg" alt="light mode icon" class="filter-orange">
-                        <div class="switch">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="slider round"></div>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="search">
+                    <div class="search-input">
+                        <img src="img/magnify.svg" alt="search icon" class="filter-color">
+                        <input type="text" id="searchBar" placeholder="Search...">
+                    </div>
+                    <div class="search-icons">
+                        <div class="mode-switch">
+                            <img src="img/light.svg" alt="light mode icon" class="filter-color">
+                            <div class="switch">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox">
+                                    <div class="slider round"></div>
+                            </div>
+                            <img src="img/dark.svg" alt="dark mode icon" class="filter-color">
                         </div>
-                        <img src="img/dark.svg" alt="dark mode icon" class="filter-orange">
+                        <div class="github">
+                            <a href="https://github.com/AttackSwan/">
+                                <img src="img/github.svg" alt="github profile icon" class="filter-color">
+                            </a>
+                            <a href="https://github.com/AttackSwan/">
+                                <p>AttackSwan</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="github">
-                        <a href="https://github.com/AttackSwan/">
-                            <img src="img/github.svg" alt="github profile icon" class="filter-orange">
-                        </a>
-                        <a href="https://github.com/AttackSwan/">
-                            <p class="text-orange">AttackSwan</p>
-                        </a>
+                    <div class="user-info">
+                        <img src="img/kenobi.png" alt="User avatar"> 
+                        <h2 class="text-orange">Hello there,</h2>   
+                        <p class="text-orange">Obi-wan Kenobi (<span style="font-family:'roboto'">@</span>highground)</p>
                     </div>
-                </div>
-                <div class="user-info">
-                    <img src="img/kenobi.png" alt="User avatar"> 
-                    <h2 class="text-orange">Hello there,</h2>   
-                    <p class="text-orange">Obi-wan Kenobi (<span style="font-family:'roboto'">@</span>highground)</p>
-                </div>
-                <div class="user-buttons">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
+                    <div class="user-buttons">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="sidebar">
-            <div class="branding">
-                <img src="img/dashboard.svg" alt="dashboard icon" class="filter-dark">
-                <p>Dashboard</p>
+            <div class="sidebar">
+                <div class="branding">
+                    <img src="img/dashboard.svg" alt="dashboard icon" class="filter-shade">
+                    <p>Dashboard</p>
+                </div>
+                <div class="navigation">
+                    <a href=""><img src="img/home.svg" alt="home icon" class="filter-shade"></a>
+                    <a href="">Home</a>
+                    <a href=""><img src="img/profile.svg" alt="profile icon" class="filter-shade"></a>
+                    <a href="">Profile</a>
+                    <a href=""><img src="img/messages.svg" alt="messages icon" class="filter-shade"></a>
+                    <a href="">Messages</a>
+                    <a href=""><img src="img/history.svg" alt="history icon" class="filter-shade"></a>
+                    <a href="">History</a>
+                    <a href=""><img src="img/tasks.svg" alt="tasks icon" class="filter-shade"></a>
+                    <a href="">Tasks</a>
+                    <a href=""><img src="img/communities.svg" alt="communities icon" class="filter-shade"></a>
+                    <a href="">Communities</a>
+                </div>
+                <div class="settings">
+                    <a href=""><img src="img/settings.svg" alt="settings icon" class="filter-shade"></a>
+                    <a href="">Settings</a>
+                    <a href=""><img src="img/support.svg" alt="support icon" class="filter-shade"></a>
+                    <a href="">Support</a>
+                    <a href=""><img src="img/privacy.svg" alt="privacy icon" class="filter-shade"></a>
+                    <a href="">Privacy</a>
+                </div>
             </div>
-            <div class="navigation">
-                <a href=""><img src="img/home.svg" alt="home icon" class="filter-dark"></a>
-                <a href="">Home</a>
-                <a href=""><img src="img/profile.svg" alt="profile icon" class="filter-dark"></a>
-                <a href="">Profile</a>
-                <a href=""><img src="img/messages.svg" alt="messages icon" class="filter-dark"></a>
-                <a href="">Messages</a>
-                <a href=""><img src="img/history.svg" alt="history icon" class="filter-dark"></a>
-                <a href="">History</a>
-                <a href=""><img src="img/tasks.svg" alt="tasks icon" class="filter-dark"></a>
-                <a href="">Tasks</a>
-                <a href=""><img src="img/communities.svg" alt="communities icon" class="filter-dark"></a>
-                <a href="">Communities</a>
-            </div>
-            <div class="settings">
-                <a href=""><img src="img/settings.svg" alt="settings icon" class="filter-dark"></a>
-                <a href="">Settings</a>
-                <a href=""><img src="img/support.svg" alt="support icon" class="filter-dark"></a>
-                <a href="">Support</a>
-                <a href=""><img src="img/privacy.svg" alt="privacy icon" class="filter-dark"></a>
-                <a href="">Privacy</a>
-            </div>
-        </div>
-
-        <div class="projects">
-            <p class="title">My Projects</p>
-            <div class="cards">
-                <div class="card">
-                    <div class="strip"></div>
-                    <div class="card-content">
-                        <div class="title">Padawan not obeying instructions?</div>
-                        <img src="img/anakin.jpg" alt="Anakin Skywalker">
-                        <p class="text">With rising awareness of classroom impairments such as "oppositional defiance disorder" and "sand intolerance", this project will assist Jedi Masters in meeting the challenges of modern educational contexts.</p>
-                        <div class="icons">
-                            <img src="img/bookmark.svg" alt="bookmark icon" class="filter-orange">
-                            <img src="img/view.svg" alt="view project icon" class="filter-orange">
-                            <img src="img/share.svg" alt="share project icon" class="filter-orange">
+            <div class="projects">
+                <p class="title">My Projects</p>
+                <div class="cards">
+                    <div class="card">
+                        <div class="strip"></div>
+                        <div class="card-content">
+                            <div class="title">Disobedient Padawan?</div>
+                            <img src="img/anakin.jpg" alt="Anakin Skywalker">
+                            <p class="text">With rising awareness of classroom impairments such as "oppositional defiance disorder" and "sand intolerance", this project will assist Jedi Masters in meeting the challenges of modern educational contexts.</p>
+                            <div class="icons">
+                                <img src="img/bookmark.svg" alt="bookmark icon" class="filter-color">
+                                <img src="img/view.svg" alt="view project icon" class="filter-color">
+                                <img src="img/share.svg" alt="share project icon" class="filter-color">
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="strip"></div>
-                    <div class="card-content">
-                        <div class="title">Lightsaber Calibration Tool</div>
-                        <img src="img/saber.jpg" alt="Lightsaber">
-                        <p class="text">Melting when you should be cutting? Unintended activation damaging your furniture? This handy trouble shooting tool will have your lightsaber as good as new in no time!</p>
-                        <div class="icons">
-                            <img src="img/bookmark.svg" alt="bookmark icon" class="filter-orange">
-                            <img src="img/view.svg" alt="view project icon" class="filter-orange">
-                            <img src="img/share.svg" alt="share project icon" class="filter-orange">
+                    <div class="card">
+                        <div class="strip"></div>
+                        <div class="card-content">
+                            <div class="title">Lightsaber Calibration Tool</div>
+                            <img src="img/saber.jpg" alt="Lightsaber">
+                            <p class="text">Melting when you should be cutting? Unintended activation damaging your furniture? This handy trouble shooting tool will have your lightsaber as good as new in no time!</p>
+                            <div class="icons">
+                                <img src="img/bookmark.svg" alt="bookmark icon" class="filter-color">
+                                <img src="img/view.svg" alt="view project icon" class="filter-color">
+                                <img src="img/share.svg" alt="share project icon" class="filter-color">
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="card">
-                    <div class="strip"></div>
-                    <div class="card-content">
-                        <div class="title">Tatooine Travel Guide</div>
-                        <img src="img/tatooine.jpg" alt="Tatooine">
-                        <p class="text">This charming audio tour will guide you through the wonderful experiences of the oasis that is Tatooine. Whether you are looking for droid-friendly bars or Sarlacc pits, this app has you covered.</p>
-                        <div class="icons">
-                            <img src="img/bookmark.svg" alt="bookmark icon" class="filter-orange">
-                            <img src="img/view.svg" alt="view project icon" class="filter-orange">
-                            <img src="img/share.svg" alt="share project icon" class="filter-orange">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mando">
-                    <div class="strip"></div>
-                    <div class="card-content">
-                        <div class="title">Pod Bets!</div>
-                        <img src="img/pod.jpg" alt="Pod Racing">
-                        <p class="text">Offering you the best odds on all officially sanctioned (and unsanctioned) Tatooine podraces! Don't miss out, this is the way to make your fortune today!</p>
-                        <div class="icons">
-                            <img src="img/bookmark.svg" alt="bookmark icon" class="filter-orange">
-                            <img src="img/view.svg" alt="view project icon" class="filter-orange">
-                            <img src="img/share.svg" alt="share project icon" class="filter-orange">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="strip"></div>
-                    <div class="card-content">
-                        <div class="title">Is your boss a narcissist?</div>
-                        <img src="img/sheev.jpg" alt="Sheev Palpatine">
-                        <p class="text">From gaslighting to overthrowing the senate, follow this guide to see which subtle behaviours indicate your employer is not as wholesome as they appear.</p>
-                        <div class="icons">
-                            <img src="img/bookmark.svg" alt="bookmark icon" class="filter-orange">
-                            <img src="img/view.svg" alt="view project icon" class="filter-orange">
-                            <img src="img/share.svg" alt="share project icon" class="filter-orange">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="strip"></div>
-                    <div class="card-content">
-                        <div class="title">Bulk discount beard oil</div>
-                        <img src="img/wookie.jpg" alt="Wookie">
-                        <p class="text">With these community-verified coupons, you'll never pay full price again! Perfect for the wookie in your life.</p>
-                        <div class="icons">
-                            <img src="img/bookmark.svg" alt="bookmark icon" class="filter-orange">
-                            <img src="img/view.svg" alt="view project icon" class="filter-orange">
-                            <img src="img/share.svg" alt="share project icon" class="filter-orange">
-                        </div>
-                    </div>
-                </div>
-                
-
-            </div>
-            <p class="title">Announcements</p>
-            <div class="RHS">
-                
-                <div class="announce-card">
-                    <div>
-                        <h2 class="title">Site Maintenance</h2>
-                        <p class="text">Holocrons will be offline from 00:00 to 01:30 for routine Maintenance.</p>
-                    </div>
-                    <div class="strip"></div>
-                    <div>
-                        <h2 class="title">Airspeeder Damage</h2>
-                        <p class="text">If anyone knows who damaged the council airspeeder, please contact Master Windu.</p>
-                    </div>
-                    <div class="strip"></div>
-                    <div>
-                        <h2 class="title">Podracing</h2>
-                        <p class="text">A reminder that betting on podracing is strictly forbidden. Anyone caught placing such bets shall be brought before the council.</p>
-                    </div>
-                </div>
-                
-                <p class="title">Trending</p>
-               
-                <div class="trend-card">
                     
-                    <div class="avatar">
-                        <img src="img/sheev.jpg" alt="Palpatine avatar">
+                    <div class="card">
+                        <div class="strip"></div>
+                        <div class="card-content">
+                            <div class="title">Tatooine Travel Guide</div>
+                            <img src="img/tatooine.jpg" alt="Tatooine">
+                            <p class="text">This charming audio tour will guide you through the wonderful experiences of the oasis that is Tatooine. Whether you are looking for droid-friendly bars or Sarlacc pits, this app has you covered.</p>
+                            <div class="icons">
+                                <img src="img/bookmark.svg" alt="bookmark icon" class="filter-color">
+                                <img src="img/view.svg" alt="view project icon" class="filter-color">
+                                <img src="img/share.svg" alt="share project icon" class="filter-color">
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <p class="title"><span style="font-family:'roboto'">@</span>thesenate</p>
-                        <p class="text">Sheev Palpatine</p>
+
+                    <div class="card mando">
+                        <div class="strip"></div>
+                        <div class="card-content">
+                            <div class="title">Pod Bets!</div>
+                            <img src="img/pod.jpg" alt="Pod Racing">
+                            <p class="text">Offering you the best odds on all officially sanctioned (and unsanctioned) Tatooine podraces! Don't miss out, this is the way to make your fortune today!</p>
+                            <div class="icons">
+                                <img src="img/bookmark.svg" alt="bookmark icon" class="filter-color">
+                                <img src="img/view.svg" alt="view project icon" class="filter-color">
+                                <img src="img/share.svg" alt="share project icon" class="filter-color">
+                            </div>
+                        </div>
                     </div>
-                    <div class="avatar">
-                        <img src="img/anakin.jpg" alt="Anakin Skywalker avatar">
-                    </div>                    <div>
-                        <p class="title"><span style="font-family:'roboto'">@</span>ihatesand</p>
-                        <p class="text">Anakin Skywalker</p>
+
+                    <div class="card">
+                        <div class="strip"></div>
+                        <div class="card-content">
+                            <div class="title">Is your boss a narcissist?</div>
+                            <img src="img/sheev.jpg" alt="Sheev Palpatine">
+                            <p class="text">From gaslighting to overthrowing the senate, follow this guide to see which subtle behaviours indicate your employer is not as wholesome as they appear.</p>
+                            <div class="icons">
+                                <img src="img/bookmark.svg" alt="bookmark icon" class="filter-color">
+                                <img src="img/view.svg" alt="view project icon" class="filter-color">
+                                <img src="img/share.svg" alt="share project icon" class="filter-color">
+                            </div>
+                        </div>
                     </div>
-                    <div class="avatar">
-                        <img src="img/yoda.jpg" alt="Yoda avatar">
-                    </div>                    <div>
-                        <p class="title"><span style="font-family:'roboto'">@</span>notry</p>
-                        <p class="text">Yoda</p>
+
+                    <div class="card">
+                        <div class="strip"></div>
+                        <div class="card-content">
+                            <div class="title">Bulk discount beard oil</div>
+                            <img src="img/wookie.jpg" alt="Wookie">
+                            <p class="text">With these community-verified coupons, you'll never pay full price again! Perfect for the wookie in your life.</p>
+                            <div class="icons">
+                                <img src="img/bookmark.svg" alt="bookmark icon" class="filter-color">
+                                <img src="img/view.svg" alt="view project icon" class="filter-color">
+                                <img src="img/share.svg" alt="share project icon" class="filter-color">
+                            </div>
+                        </div>
                     </div>
-                    <div class="avatar">
-                        <img src="img/watto.jpg" alt="Watto avatar">
-                    </div>                    <div>
-                    <div>
-                        <p class="title"><span style="font-family:'roboto'">@</span>Bargains4U</p>
-                        <p class="text">Watto</p>
+                    
+                </div>
+                <p class="title">Announcements</p>
+                <div class="RHS">
+                    <div class="announce-card">
+                        <div>
+                            <h2 class="title">Site Maintenance</h2>
+                            <p class="text">Holocrons will be offline from 00:00 to 01:30 for routine Maintenance.</p>
+                        </div>
+                        <div class="strip"></div>
+                        <div>
+                            <h2 class="title">Airspeeder Damage</h2>
+                            <p class="text">If anyone knows who damaged the council airspeeder, please contact Master Windu.</p>
+                        </div>
+                        <div class="strip"></div>
+                        <div>
+                            <h2 class="title">Podracing</h2>
+                            <p class="text">A reminder that betting on podracing is strictly forbidden. Anyone caught placing such bets shall be brought before the council.</p>
+                        </div>
+                    </div>
+                    <p class="title">Trending</p>
+                    <div class="trend-card">
+                        <div class="avatar">
+                            <img src="img/sheev.jpg" alt="Palpatine avatar">
+                        </div>
+                        <div>
+                            <p class="title"><span style="font-family:'roboto'">@</span>thesenate</p>
+                            <p class="text">Sheev Palpatine</p>
+                        </div>
+                        <div class="avatar">
+                            <img src="img/anakin.jpg" alt="Anakin Skywalker avatar">
+                        </div>                    <div>
+                            <p class="title"><span style="font-family:'roboto'">@</span>ihatesand</p>
+                            <p class="text">Anakin Skywalker</p>
+                        </div>
+                        <div class="avatar">
+                            <img src="img/yoda.jpg" alt="Yoda avatar">
+                        </div>                    <div>
+                            <p class="title"><span style="font-family:'roboto'">@</span>notry</p>
+                            <p class="text">Yoda</p>
+                        </div>
+                        <div class="avatar">
+                            <img src="img/watto.jpg" alt="Watto avatar">
+                        </div>                    <div>
+                        <div>
+                            <p class="title"><span style="font-family:'roboto'">@</span>Bargains4U</p>
+                            <p class="text">Watto</p>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
